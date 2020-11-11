@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function convert() {
+            let mon = parseInt(document.getElementById("mon").value);
+            let s2 = (mon*23000);
+            alert("so tien viet"+s2);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <table width="40%" >
+            <tr align="center">
+                <td>Amount</td>
+                <td></td>
+                <td>From currency</td>
+                <td></td>
+                <td>To currency</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="mon">
+                </td>
+                <td></td>
+                <td>
+                    <select>
+                        <option>Vietnam</option>
+                        <option>America</option>
+                    </select>
+                </td>
+                <td></td>
+                <td>
+                    <select id="s2">
+                        <option value="usd">USD</option>
+                        <option value="vnd">VND</option>
+                    </select>
+                </td>
+                <td>
+                    <input style="background-color: blue; color: snow"  type="button"  value="Convert" onclick=convert();>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
